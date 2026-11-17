@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CRM 4SAS Tutorials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside>
+    <div class="brand">
+      <div class="eyebrow">CRM Department · Training</div>
+      <h1>4SAS export, step by step</h1>
+      <p>Watch, follow along, tick off each step, then take the quick check.</p>
+    </div>
+    <div class="lessons" role="tablist" aria-label="Lessons" id="lessons"></div>
+    <div class="flow">
+      <h3>The full process</h3>
+      <ol>
+        <li>Odoo 4SAS Dashboard</li>
+        <li>Export with template 4SAS 2.0</li>
+        <li>Paste in DONT DELETE</li>
+        <li>0 → 1ST 4SAS tab</li>
+        <li>1 and up → Retention Tracker</li>
+      </ol>
+    </div>
+    <button class="reset" id="reset">Reset my progress</button>
+  </aside>
+
+  <main>
+    <div class="head">
+      <div>
+        <div class="eyebrow" id="partLabel">Part 1</div>
+        <h2 id="lessonTitle"></h2>
+      </div>
+      <div class="meta" id="lessonMeta"></div>
+    </div>
+
+    <div class="stage">
+      <video id="video" controls preload="metadata" playsinline></video>
+      <div class="timeline">
+        <div class="tl-bar" id="tl" aria-label="Jump to a step"></div>
+        <div class="tl-legend"><span>Click a block to jump to that step</span><span id="clock">0:00</span></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <section class="card now" aria-live="polite">
+        <div class="now-top">
+          <div class="big-n" id="nowN">1</div>
+          <div>
+            <div class="now-label" id="nowLabel">Step 1 of 8</div>
+            <h3 id="nowTitle"></h3>
+          </div>
+        </div>
+        <p id="nowText"></p>
+        <div class="tip" id="nowTip"></div>
+        <div class="controls">
+          <button class="btn" id="prev">← Prev</button>
+          <button class="btn primary" id="play">▶ Play this step</button>
+          <button class="btn" id="next">Next →</button>
+          <button class="btn check" id="mark" aria-pressed="false">✓ Mark done</button>
+        </div>
+      </section>
+
+      <section class="card checklist">
+        <h3>Checklist <span id="count">0 / 8 done</span></h3>
+        <ul class="checks" id="checks"></ul>
+      </section>
+    </div>
+
+    <section class="card" id="rulesCard">
+      <h3 style="margin:0;font:600 16px/1.3 var(--display)">Where each lead goes</h3>
+      <div class="rules">
+        <div class="rule"><span>Potential Duplicate</span><b>0</b><span>Non-retention client → 1ST 4SAS tab</span></div>
+        <div class="rule"><span>Potential Duplicate</span><b>1 and up</b><span>Retention client → RETENTION TRACKER › RO 1st 4SAS</span></div>
+        <div class="rule"><span>Potential Duplicate</span><b>(Blanks)</b><span>Leave unticked in both filters</span></div>
+      </div>
+    </section>
+
+    <section class="card quiz">
+      <h3>Quick check <span id="score"></span></h3>
+      <div id="quiz"></div>
+    </section>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
