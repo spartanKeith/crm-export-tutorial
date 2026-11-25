@@ -33,6 +33,58 @@ var LESSONS = [
       { q: "Which tab do you paste the raw export into first?", o: ["1ST 4SAS", "DONT DELETE", "4SAS COUNTS", "FOLLOW UP"], a: 1, why: "DONT DELETE holds the full export before filtering." },
       { q: "A lead with Potential Duplicate = 0 goes to…", o: ["RO 1st 4SAS", "1ST 4SAS tab", "SOURCE COUNTS", "Nowhere"], a: 1, why: "0 means a non-retention client." },
       { q: "Which values go to the Retention Tracker?", o: ["0 only", "Blanks only", "1 and up", "Everything"], a: 2, why: "Untick 0 and (Blanks); what's left are retention clients." }
+    ] },
+  { id: "part-3", part: "Part 3", title: "Get the 2nd 4SAS leads in Odoo", short: "2nd 4SAS leads",
+    src: "part3.mp4", poster: "poster3.jpg", dur: 36, meta: "36 sec · 4 steps",
+    steps: [
+      { t: 4.0, title: "Click the 3 DAYS card", text: "On the 4SAS Dashboard, click the 3 DAYS tile.", tip: "It is the second tile in the top row, beside Pending Triggered." },
+      { t: 7.6, title: "Select the 1st 4SAS TOTAL filter", text: "Click the arrow at the right of the search bar, then pick 1st 4SAS TOTAL under Favorites.", tip: "Pick <b>1st 4SAS TOTAL</b>, not 1ST 4SAS or 1ST 4SAS TARGET." },
+      { t: 14.9, title: "Click the star and set the date", text: "Click the star on the 1st 4SAS TOTAL filter, set the 4SAS Start Date range, then click Confirm.", tip: "The list may look empty until you set the date range." },
+      { t: 26.5, title: "That's it", text: "The list now shows your 2nd 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
+    ],
+    quiz: [
+      { q: "Which dashboard card do you open for the 2nd 4SAS?", o: ["Pending Triggered", "3 DAYS", "14 DAYS", "TOTAL 4SAS"], a: 1, why: "The 2nd 4SAS starts from the 3 DAYS list." },
+      { q: "Which Favorites filter do you choose?", o: ["1ST 4SAS", "1ST 4SAS TARGET", "1st 4SAS TOTAL", "2ND 4SAS DONE"], a: 2, why: "1st 4SAS TOTAL is the saved filter for this step." },
+      { q: "How do you set the date range?", o: ["Click the star on the filter", "Use Date Filter on the dashboard", "Group By Creation Date", "Sort by Generated Sales Date"], a: 0, why: "Clicking the star opens Modify Condition, where you set the 4SAS Start Date." }
+    ] },
+  { id: "part-4", part: "Part 4", title: "Get the 3rd 4SAS leads in Odoo", short: "3rd 4SAS leads",
+    src: "part4.mp4", poster: "poster4.jpg", dur: 36, meta: "36 sec · 4 steps",
+    steps: [
+      { t: 4.0, title: "Click the 7 DAYS card", text: "On the 4SAS Dashboard, click the 7 DAYS tile.", tip: "It is the third tile in the top row, beside 3 DAYS." },
+      { t: 7.6, title: "Select the 2ND 4SAS DONE filter", text: "Click the arrow at the right of the search bar, then pick 2ND 4SAS DONE under Favorites.", tip: "Pick <b>2ND 4SAS DONE</b>, not 3RD 4SAS DONE." },
+      { t: 14.9, title: "Click the star and change the date", text: "Click the star on the 2ND 4SAS DONE filter, change the 4SAS 7 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 7 Days Date</b>, not 4SAS Start Date." },
+      { t: 26.5, title: "That's it, you can export it", text: "The list now shows your 3rd 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
+    ],
+    quiz: [
+      { q: "Which dashboard card do you open for the 3rd 4SAS?", o: ["3 DAYS", "7 DAYS", "14 DAYS", "30 DAYS"], a: 1, why: "The 3rd 4SAS starts from the 7 DAYS list." },
+      { q: "Which Favorites filter do you choose?", o: ["1st 4SAS TOTAL", "2ND 4SAS DONE", "3RD 4SAS DONE", "3RD 4SAS TARGET"], a: 1, why: "2ND 4SAS DONE gives the leads that finished the 2nd 4SAS." },
+      { q: "Which date do you change in Modify Condition?", o: ["4SAS Start Date", "4SAS 7 Days Date", "Creation Date", "Generated Sales Date"], a: 1, why: "For the 3rd 4SAS, the filter uses the 4SAS 7 Days Date." }
+    ] },
+  { id: "part-5", part: "Part 5", title: "Get the 4th 4SAS leads in Odoo", short: "4th 4SAS leads",
+    src: "part5.mp4", poster: "poster5.jpg", dur: 33, meta: "33 sec · 4 steps",
+    steps: [
+      { t: 4.0, title: "Click the 14 DAYS card", text: "On the 4SAS Dashboard, click the 14 DAYS tile.", tip: "It is the fourth tile in the top row, beside 7 DAYS." },
+      { t: 7.6, title: "Select the 3RD 4SAS DONE filter", text: "Click the arrow at the right of the search bar, then pick 3RD 4SAS DONE under Favorites.", tip: "<b>3RD 4SAS DONE</b> is the first item under Favorites." },
+      { t: 14.9, title: "Change the date", text: "Click the star on the 3RD 4SAS DONE filter, change the 4SAS 14 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 14 Days Date</b>." },
+      { t: 22.9, title: "That's it, you can export it", text: "The list now shows your 4th 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
+    ],
+    quiz: [
+      { q: "Which dashboard card do you open for the 4th 4SAS?", o: ["7 DAYS", "14 DAYS", "30 DAYS", "TOTAL 4SAS"], a: 1, why: "The 4th 4SAS starts from the 14 DAYS list." },
+      { q: "Which Favorites filter do you choose?", o: ["2ND 4SAS DONE", "3RD 4SAS DONE", "14 DAYS DONE", "4TH 4SAS TOTAL"], a: 1, why: "3RD 4SAS DONE gives the leads that finished the 3rd 4SAS." },
+      { q: "Which date do you change in Modify Condition?", o: ["4SAS 7 Days Date", "4SAS Start Date", "4SAS 14 Days Date", "Creation Date"], a: 2, why: "For the 4th 4SAS, the filter uses the 4SAS 14 Days Date." }
+    ] },
+  { id: "part-6", part: "Part 6", title: "Get the 5th 4SAS leads in Odoo", short: "5th 4SAS leads",
+    src: "part6.mp4", poster: "poster6.jpg", dur: 34, meta: "34 sec · 4 steps",
+    steps: [
+      { t: 4.0, title: "Click the 30 DAYS card", text: "On the 4SAS Dashboard, click the 30 DAYS tile.", tip: "It is the fifth tile in the top row, beside 14 DAYS." },
+      { t: 7.6, title: "Use the 4TH 4SAS TOTAL filter", text: "Click the arrow at the right of the search bar, then pick 4TH 4SAS TOTAL under Favorites.", tip: "<b>4TH 4SAS TOTAL</b> is the last item under Favorites." },
+      { t: 12.2, title: "Change the date", text: "Click the star on the 4TH 4SAS TOTAL filter, change the 4SAS 30 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 30 Days Date</b>." },
+      { t: 23.9, title: "That's it, you can export it", text: "The list now shows your 5th 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
+    ],
+    quiz: [
+      { q: "Which dashboard card do you open for the 5th 4SAS?", o: ["14 DAYS", "30 DAYS", "TOTAL 4SAS", "Repeat Order"], a: 1, why: "The 5th 4SAS starts from the 30 DAYS list." },
+      { q: "Which Favorites filter do you choose?", o: ["3RD 4SAS DONE", "4TH 4SAS TOTAL", "4SAS SOURCES", "1st 4SAS TOTAL"], a: 1, why: "4TH 4SAS TOTAL is the saved filter for the 5th 4SAS." },
+      { q: "Which date do you change in Modify Condition?", o: ["4SAS 14 Days Date", "4SAS 30 Days Date", "4SAS Start Date", "Closed Date"], a: 1, why: "For the 5th 4SAS, the filter uses the 4SAS 30 Days Date." }
     ] }
 ];
 
