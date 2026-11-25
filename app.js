@@ -39,7 +39,7 @@ var LESSONS = [
     steps: [
       { t: 4.0, title: "Click the 3 DAYS card", text: "On the 4SAS Dashboard, click the 3 DAYS tile.", tip: "It is the second tile in the top row, beside Pending Triggered." },
       { t: 7.6, title: "Select the 1st 4SAS TOTAL filter", text: "Click the arrow at the right of the search bar, then pick 1st 4SAS TOTAL under Favorites.", tip: "Pick <b>1st 4SAS TOTAL</b>, not 1ST 4SAS or 1ST 4SAS TARGET." },
-      { t: 14.9, title: "Click the star and set the date", text: "Click the star on the 1st 4SAS TOTAL filter, set the 4SAS Start Date range, then click Confirm.", tip: "The list may look empty until you set the date range." },
+      { t: 14.9, title: "Click the star and set the date", text: "Click the star on the 1st 4SAS TOTAL filter, set the 4SAS Start Date range, then click Confirm.", tip: "Start date: always <b>January 1 (this year), 00:00:00</b>. End date: count <b>7 days back</b> from today, at 23:59:59. <b>Example:</b> today is Nov 25, so set <b>Jan 1, 00:00:00 → Nov 18, 23:59:59</b>. The date field is <b>4SAS Start Date</b>." },
       { t: 26.5, title: "That's it", text: "The list now shows your 2nd 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
     ],
     quiz: [
@@ -52,7 +52,7 @@ var LESSONS = [
     steps: [
       { t: 4.0, title: "Click the 7 DAYS card", text: "On the 4SAS Dashboard, click the 7 DAYS tile.", tip: "It is the third tile in the top row, beside 3 DAYS." },
       { t: 7.6, title: "Select the 2ND 4SAS DONE filter", text: "Click the arrow at the right of the search bar, then pick 2ND 4SAS DONE under Favorites.", tip: "Pick <b>2ND 4SAS DONE</b>, not 3RD 4SAS DONE." },
-      { t: 14.9, title: "Click the star and change the date", text: "Click the star on the 2ND 4SAS DONE filter, change the 4SAS 7 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 7 Days Date</b>, not 4SAS Start Date." },
+      { t: 14.9, title: "Click the star and change the date", text: "Click the star on the 2ND 4SAS DONE filter, change the 4SAS 7 Days Date range, then click Confirm.", tip: "Start date: always <b>January 1 (this year), 00:00:00</b>. End date: count <b>14 days back</b> from today, at 23:59:59. <b>Example:</b> today is Nov 25, so set <b>Jan 1, 00:00:00 → Nov 11, 23:59:59</b>. The date field is <b>4SAS 7 Days Date</b>." },
       { t: 26.5, title: "That's it, you can export it", text: "The list now shows your 3rd 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
     ],
     quiz: [
@@ -65,7 +65,7 @@ var LESSONS = [
     steps: [
       { t: 4.0, title: "Click the 14 DAYS card", text: "On the 4SAS Dashboard, click the 14 DAYS tile.", tip: "It is the fourth tile in the top row, beside 7 DAYS." },
       { t: 7.6, title: "Select the 3RD 4SAS DONE filter", text: "Click the arrow at the right of the search bar, then pick 3RD 4SAS DONE under Favorites.", tip: "<b>3RD 4SAS DONE</b> is the first item under Favorites." },
-      { t: 14.9, title: "Change the date", text: "Click the star on the 3RD 4SAS DONE filter, change the 4SAS 14 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 14 Days Date</b>." },
+      { t: 14.9, title: "Change the date", text: "Click the star on the 3RD 4SAS DONE filter, change the 4SAS 14 Days Date range, then click Confirm.", tip: "Start date: always <b>January 1 (this year), 00:00:00</b>. End date: count <b>30 days back</b> from today, at 23:59:59. <b>Example:</b> today is Nov 25, so set <b>Jan 1, 00:00:00 → Oct 26, 23:59:59</b>. The date field is <b>4SAS 14 Days Date</b>." },
       { t: 22.9, title: "That's it, you can export it", text: "The list now shows your 4th 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
     ],
     quiz: [
@@ -78,7 +78,7 @@ var LESSONS = [
     steps: [
       { t: 4.0, title: "Click the 30 DAYS card", text: "On the 4SAS Dashboard, click the 30 DAYS tile.", tip: "It is the fifth tile in the top row, beside 14 DAYS." },
       { t: 7.6, title: "Use the 4TH 4SAS TOTAL filter", text: "Click the arrow at the right of the search bar, then pick 4TH 4SAS TOTAL under Favorites.", tip: "<b>4TH 4SAS TOTAL</b> is the last item under Favorites." },
-      { t: 12.2, title: "Change the date", text: "Click the star on the 4TH 4SAS TOTAL filter, change the 4SAS 30 Days Date range, then click Confirm.", tip: "Here the date field is <b>4SAS 30 Days Date</b>." },
+      { t: 12.2, title: "Change the date", text: "Click the star on the 4TH 4SAS TOTAL filter, change the 4SAS 30 Days Date range, then click Confirm.", tip: "Start date: always <b>January 1 (this year), 00:00:00</b>. The date field is <b>4SAS 30 Days Date</b>." },
       { t: 23.9, title: "That's it, you can export it", text: "The list now shows your 5th 4SAS leads.", tip: "To download them, follow <b>Part 1, steps 4 to 8</b>: select all, Actions › Export, template 4SAS 2.0." }
     ],
     quiz: [
